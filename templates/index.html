@@ -1,64 +1,13 @@
+{% extends '../../../PycharmProjects/DOESolidariedade/templates/base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
+{% block titulo %} Home - {% endblock %}
 
-  <head>
+{% block conteudo %}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>DOE SOLIDARIEDADE</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="css/small-business.css" rel="stylesheet">
-
-  </head>
-
-  <body style="background-color: #F0FFF0">
-
-       <nav class=" navbar navbar-expand-md navbar-light navbar-fixed-top" style="background-color:#3CB371 " >
-            <a class="navbar-brand" href="#">Home</a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-           </button>
-
-             <div class="collapse navbar-collapse " id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto">
-                         <li class="nav-item active">
-                             <a class="nav-link" href="#">Quem Somos
-                             <span class="sr-only">(current)</span>
-                             </a>
-                         </li>
-                           <li class="nav-item">
-                                <a class="nav-link" href="#">Entidades</a>
-                           </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Contato</a>
-                            </li>
-                    </ul>
-                                         <form class="form-inline my-2 my-lg-0">
-                                             <input class="form-control mr-sm-2" type="text" placeholder="pesquisa" aria-label="pesquisa">
-                                             <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">pesquisa</button>
-                                         </form>
-             </div>
-       </nav>
-
-
-
-
-
-
-           <div class="container">
+     <div class="container">
               <div class="row ">
 
-                    <div class=" col -lg-4 " >
+                    <div class=" col-lg-4 " >
                          <img class="rounded-circle" src="/static/img/logo01.jpg" alt="Generic placeholder image" width="300" height="300" >
                     </div>
 
@@ -97,18 +46,5 @@
            </div>
         </div>
 
+{% endblock %}
 
-    <!-- Footer -->
-    <footer class="py-2 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.c  ontainer -->
-    </footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
-</html>
