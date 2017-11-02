@@ -2,10 +2,14 @@
     background-color: #F0FFF0;
 }
 
-.formulario-login {
+.panel-title {
+    text-align: center;
 
 }
 .recSenha {
     float: right;
     padding-bottom: 10px;
+}
+.py-2 bg-dark{
+    bottom: 0px;
 }
