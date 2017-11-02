@@ -1,3 +1,11 @@
 .corpo {
     background-color: #F0FFF0;
 }
+
+.formulario-login {
+
+}
+.recSenha {
+    float: right;
+    padding-bottom: 10px;
+}
