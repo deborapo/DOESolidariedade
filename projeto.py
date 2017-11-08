@@ -15,7 +15,7 @@ def login():
 
 @app.route('/listar')
 def listar():
-    return render_template('pontosColeta.html', instituicoes=inst)
+    return render_template('coleta.html', instituicoes=inst)
 
 @app.route('/cadastro')
 def cadastro():
