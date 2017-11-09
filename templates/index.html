@@ -1,46 +1,103 @@
- {% extends 'base.html' %}
+{% extends 'base.html' %}
 
 {% block titulo %} Home - {% endblock %}
 
 {% block conteudo %}
-     <header class="py-5 bg-image-full" style="background-image: url('/static/img/s.jpg');background-repeat: no-repeat;">
+    <header class="py-5 bg-image-full" style="background-image: url('/static/img/s.jpg');background-repeat: no-repeat;">
 
-      <div class="col-lg-4"style="margin-left: 35%;">
+        <div class="col-lg-4"style="margin-left: 35%;">
 
-           <img class="rounded-circle" src="/static/img/logo01.jpg" alt="Generic placeholder image">
-                      <h1>DOE Solidariedade</h1>
-                      <p>O site DOE - Espalhe grati dão pelo Mundo é destinada a coleta de bens para doações às entidades e organizações de assistência social carente sem fins lucrativos, utilizando a tecnologia!</p>
-                        <a class="btn btn-info" href="/login " role="button">login</a>
-                        <a class="btn btn-success btn-lg" href="/cadastro " role="button">cadastro</a>
-      </div>
+            <img class="rounded-circle" src="/static/img/logo01.jpg" alt="Generic placeholder image">
+            <h1>DOE Solidariedade</h1>
+            <p>O site DOE - Espalhe grati dão pelo Mundo é destinada a coleta de bens para doações às entidades e organizações de assistência social carente sem fins lucrativos, utilizando a tecnologia!</p>
+            <a class="btn btn-info btn-lg" href="/login " role="button">login</a>
+            <a class="btn btn-success btn-lg" href="/cadastro " role="button">cadastro</a>
+        </div>
     </header>
 
-     <div class="container">
+    <div class="container">
 
-            <!-- colunas da ong-->
+        <!-- colunas da ong-->
 
-           <div class="row" style="margin-top: 190px;">
-                  <div class="col-lg-4">
-                    <img class="rounded-circle" src="/static/img/rosetta.jpg" alt="Generic placeholder image" width="200" height="200">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                  </div>
-                  <div class="col-lg-4">
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-lg-4">
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                  </div><!-- /.col-lg-4 -->
+        <div class="row" style="margin-top: 90px;">
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="/static/img/rosetta.jpg" alt="Generic placeholder image" width="200" height="200">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <button type="button" style="cursor: pointer;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Leia Mais</button>
+
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Texto aqui
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-           </div>
-     </div>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                <h2>Heading</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <button type="button" style="cursor: pointer;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2">Leia Mais</button>
+
+                <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle2" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle2">titulo 2</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Texto aqui
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <button type="button" style="cursor: pointer;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3">Leia Mais</button>
+
+                <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle3" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle3">titulo 3</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Texto  numero 3
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div>
+    </div>
 
 {% endblock %}
 
