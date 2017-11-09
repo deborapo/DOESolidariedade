@@ -1,15 +1,17 @@
- n{% extends 'base.html' %}
+ {% extends 'base.html' %}
 
 {% block titulo %} Home - {% endblock %}
 
 {% block conteudo %}
-     <header class="py-5 bg-image-full" style="background-image: url('http://www.imagenslivres.com/wp-content/uploads/2017/04/Comunidade-e-Solidariedade-M%C3%A3os-Estendidas.jpg') ">
+     <header class="py-5 bg-image-full" style="background-image: url('/static/img/s.jpg');background-repeat: no-repeat;">
+
       <div class="col-lg-4"style="margin-left: 35%;">
+
            <img class="rounded-circle" src="/static/img/logo01.jpg" alt="Generic placeholder image">
                       <h1>DOE Solidariedade</h1>
-                      <p>O site DOE - Espalhe gratidão pelo Mundo é destinada a coleta de bens para doações às entidades e organizações de assistência social carente sem fins lucrativos, utilizando a tecnologia!</p>
-                        <input class="btn btn-success" type="button" value="Login">
-                        <input class="btn btn-warning" type="button" value="cadastre-se">
+                      <p>O site DOE - Espalhe grati dão pelo Mundo é destinada a coleta de bens para doações às entidades e organizações de assistência social carente sem fins lucrativos, utilizando a tecnologia!</p>
+                        <a class="btn btn-info" href="/login " role="button">login</a>
+                        <a class="btn btn-success btn-lg" href="/cadastro " role="button">cadastro</a>
       </div>
     </header>
 
@@ -19,7 +21,7 @@
 
            <div class="row" style="margin-top: 190px;">
                   <div class="col-lg-4">
-                    <img class="rounded-circle" src="/static/img/logo01.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <img class="rounded-circle" src="/static/img/rosetta.jpg" alt="Generic placeholder image" width="200" height="200">
                     <h2>Heading</h2>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                     <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>

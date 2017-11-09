@@ -2,8 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-inst = {'inst1', 'inst2', 'inst3'}
-
 @app.route('/',methods = ['GET','POST'])
 
 def index():
@@ -15,7 +13,7 @@ def login():
 
 @app.route('/listar')
 def listar():
-    return render_template('coleta.html', instituicoes=inst)
+    return render_template('coleta.html')
 
 @app.route('/cadastro')
 def cadastro():
