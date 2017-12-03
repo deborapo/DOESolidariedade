@@ -19,6 +19,10 @@ def listar():
 def cadastro():
     return render_template('cadastro.html')
 
+@app.route('/editar')
+def editar():
+    return render_template('editar.html')
+
 
 
 if __name__ == '__main__':
